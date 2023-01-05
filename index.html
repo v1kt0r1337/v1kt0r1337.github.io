@@ -1,1 +1,198 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Viktor Setervang - CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+      if (params.theme === "light") {
+        const r = document.querySelector(":root");
+        r.style.setProperty("--bg-color", "#fff");
+        r.style.setProperty("--primary-color", "black");
+        r.style.setProperty("--secondary-color", "#999");
+        r.style.setProperty("--info-color", "#999");
+        // move script to the end body tag to be able to target element id
+        // document.getElementById("pic").style.webkitFilter = "grayscale(100%)";
+        // document.getElementById("pic").style.filter = "grayscale(100%)";
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+          src="assets/viktor_setervang.png"
+          alt="Photo of Viktor Setervang"
+          id="pic"
+        />
+        <h1>Viktor Setervang</h1>
+      </header>
+
+      <section id="contact">
+        <span class="leader">Phone</span><span>+47 951 23 368</span><br />
+        <span class="leader">Email</span
+        ><a href="mailto:setervang@hotmail.com">setervang@hotmail.com</a><br />
+        <span class="leader">LinkedIn</span
+        ><a href="https://www.linkedin.com/in/viktor-setervang/"
+          >linkedin.com/in/viktor-setervang/</a
+        ><br />
+        <span class="leader">Github</span
+        ><a href="https://github.com/v1kt0r1337">github.com/v1kt0r1337</a><br />
+        <span class="leader">CV</span
+        ><a href="https://v1kt0r1337.github.io/">v1kt0r1337.github.io/</a><br />
+      </section>
+
+      <section id="work-me">
+        <p>
+          I am a software developer that loves solving complex problems in a
+          simple yet scalable way.
+        </p>
+      </section>
+      <dl>
+        <section>
+          <dt>Core skills</dt>
+          <dd>
+            <h2>Web development</h2>
+            <p>
+              Experience in all stages of the development process, including
+              planning, system design, implementation, and support in production
+              environments.
+            </p>
+            <h2>Programming</h2>
+            <p>
+              As a programmer, I am inspired by the functional paradigm and
+              strive to write pure, immutable code whenever it is feasible to do
+              so.
+            </p>
+          </dd>
+        </section>
+
+        <section>
+          <dt>Technical skills</dt>
+          <dd>
+            <ul>
+              <li>HTML, CSS, Javascript/Typescript</li>
+              <li>React, React Native, Android</li>
+              <li>C#, Java, PHP, Python, C++</li>
+              <li>SQL, MS SQL, MySQL, SQLite</li>
+            </ul>
+          </dd>
+        </section>
+
+        <section>
+          <dt>Employments</dt>
+          <dd>
+            <section>
+              <h2>Keystone No<span>Developer - 2022 to Present</span></h2>
+              <ul>
+                <li>Work place: Kristiansand and remote</li>
+                <li>Employed</li>
+              </ul>
+            </section>
+            <section>
+              <h2>
+                Muuh<span
+                  >Developer - 2018 to 2022, Tech lead - 2021 to 2022</span
+                >
+              </h2>
+              <ul>
+                <li>Work place: Kristiansand and remote</li>
+                <li>Employed</li>
+              </ul>
+            </section>
+            <section>
+              <h2>EasyZign<span>Developer - 2017 to 2019</span></h2>
+              <ul>
+                <li>Work place: Remote</li>
+                <li>Contracted via Setervang Consulting</li>
+              </ul>
+            </section>
+          </dd>
+        </section>
+
+        <section>
+          <dt>Selected projects</dt>
+          <dd>
+            <section>
+              <h2>Bridge - Timeplanner<span>2018-2023</span></h2>
+              <p>
+                Developer and frontend techlead for a planning and execution
+                software for oil wellbores. A flexible and easily adaptable
+                solution that can suit multiple different business needs.
+              </p>
+              <ul>
+                <li>React, Typescript, Redux</li>
+                <li>PHP, Laravel, InertiaJS, MySQL</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Master Equipment List<span>2021-2023</span></h2>
+              <p>
+                Frontend developer for equipment list and personnel that can be
+                connected to a Timeplan.
+              </p>
+              <ul>
+                <li>React, Typescript</li>
+                <li>PHP, Laravel, InertiaJS, MySQL</li>
+              </ul>
+            </section>
+            <section>
+              <h2>RosterRabbit<span>2018</span></h2>
+              <p>
+                Frontend web and mobile developer for an automatic shift
+                scheduler.
+              </p>
+              <ul>
+                <li>React, Javascript, SASS, Redux</li>
+                <li>ReactNative, Javascript, Redux</li>
+              </ul>
+            </section>
+            <section>
+              <h2>SlagAppen<span>2018</span></h2>
+              <p>
+                Mobile developer for an emergency app specially developed for
+                stroke victims.
+              </p>
+              <ul>
+                <li>
+                  React Native, Javascript, Redux, GPS tracking, WebRTC (video
+                  and audio streaming)
+                </li>
+              </ul>
+            </section>
+          </dd>
+        </section>
+
+        <section>
+          <dt>Education</dt>
+          <dd>
+            <h2>University of Agder - IT and Information Systems</h2>
+            <p>
+              <strong>Bachelor assignment:</strong> UIA Kompetansetorget
+              <a href="https://github.com/v1kt0r1337/KompetansetorgetXamarin"
+                >Mobile app in Xamarin</a
+              >
+              and
+              <a href="https://github.com/v1kt0r1337/KompetansetorgetServer"
+                >backend in ASP.NET</a
+              >, with MS SQL and backend hosted in Azure.
+            </p>
+            <h2>
+              Inland Norway University of Applied Sciences - Sport,
+              specialisation in the role of coach
+            </h2>
+            <p>
+              <strong>Bachelor thesis:</strong>
+              <a href="https://brage.inn.no/inn-xmlui/handle/11250/225209"
+                >The impact of squats on vertical jump and running speed</a
+              >
+            </p>
+          </dd>
+        </section>
+      </dl>
+    </main>
+  </body>
+</html>

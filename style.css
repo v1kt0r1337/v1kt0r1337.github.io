@@ -1,0 +1,144 @@
+/* :root {
+  --bg-color: #fff;
+  --primary-color: black;
+  --secondary-color: #999;
+  --info-color: #999;
+} */
+
+:root {
+  --bg-color: #282c34;
+  --primary-color: #fff;
+  --secondary-color: #999;
+  --info-color: #61afef;
+}
+
+body {
+  font-size: 16px;
+  font: 16px Helvetica, Sans-Serif;
+  line-height: 24px;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+main {
+  width: 800px;
+  margin: 30px auto 60px auto;
+}
+
+h1 {
+  font-size: 42px;
+  border-bottom: 1px solid #999;
+  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+h2 span {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--info-color);
+  margin-left: auto;
+  float: right;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--info-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--secondary-color);
+}
+
+/* header {
+  overflow: auto;
+}
+
+header h1 {
+  float: left;
+}
+header img {
+  position: relative;
+} */
+
+#contact span.leader {
+  min-width: 4.5rem;
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+#pic {
+  /* width: auto; */
+  /* width: 180px; */
+  height: 235px;
+  width: auto;
+  float: right;
+  /* border-radius: 3px; */
+  background-color: var(--bg-color);
+}
+
+#work-me {
+  width: 500px;
+  margin-bottom: 3rem;
+}
+
+#work-me p {
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  width: 150px;
+  min-width: 150px;
+  /*max-width: 150px; */
+  height: 100px;
+  border-right: 1px solid var(--info-color);
+  padding-right: 26px;
+  text-align: right;
+  color: var(--primary-color);
+}
+
+dd {
+  margin-left: 26px;
+  width: 100%;
+}
+
+dd h2 {
+  color: var(--primary-color);
+}
+
+dd p {
+  color: var(--primary-color);
+}
+
+/* section {
+  padding-bottom: 1rem;
+} */
+
+dl > section {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+ul {
+  margin: 0px 0px 2rem 15px;
+  padding-left: 0px;
+}
+
+li {
+  color: var(--primary-color);
+}
