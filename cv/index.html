@@ -4,21 +4,8 @@
     <meta charset="utf-8" />
     <title>Viktor Setervang - CV</title>
     <link rel="stylesheet" href="style.css" />
-    <script>
-      const params = new Proxy(new URLSearchParams(window.location.search), {
-        get: (searchParams, prop) => searchParams.get(prop),
-      });
-      if (params.theme === "light") {
-        const r = document.querySelector(":root");
-        r.style.setProperty("--bg-color", "#fff");
-        r.style.setProperty("--primary-color", "black");
-        r.style.setProperty("--secondary-color", "#999");
-        r.style.setProperty("--info-color", "#999");
-        // move script to the end body tag to be able to target element id
-        // document.getElementById("pic").style.webkitFilter = "grayscale(100%)";
-        // document.getElementById("pic").style.filter = "grayscale(100%)";
-      }
-    </script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" defer="defer" src="after.js"></script>
   </head>
   <body>
     <main>
@@ -31,19 +18,31 @@
         <h1>Viktor Setervang</h1>
       </header>
 
-      <section id="contact">
-        <span class="leader">Phone</span><span>+47 951 23 368</span><br />
-        <span class="leader">Email</span
-        ><a href="mailto:setervang@hotmail.com">setervang@hotmail.com</a><br />
-        <span class="leader">LinkedIn</span
-        ><a href="https://www.linkedin.com/in/viktor-setervang/"
-          >linkedin.com/in/viktor-setervang/</a
-        ><br />
-        <span class="leader">Github</span
-        ><a href="https://github.com/v1kt0r1337">github.com/v1kt0r1337</a><br />
-        <span class="leader">CV</span
-        ><a href="https://v1kt0r1337.github.io/">v1kt0r1337.github.io/</a><br />
-      </section>
+      <div class="flex align-center">
+        <section id="contact">
+          <span class="leader">Phone</span><span>+47 951 23 368</span><br />
+          <span class="leader">Email</span
+          ><a href="mailto:setervang@hotmail.com">setervang@hotmail.com</a
+          ><br />
+          <span class="leader">LinkedIn</span
+          ><a href="https://www.linkedin.com/in/viktor-setervang/"
+            >linkedin.com/in/viktor-setervang/</a
+          ><br />
+          <span class="leader">Github</span
+          ><a href="https://github.com/v1kt0r1337">github.com/v1kt0r1337</a
+          ><br />
+          <span class="leader">CV</span
+          ><a href="https://v1kt0r1337.github.io/">v1kt0r1337.github.io/</a
+          ><br />
+        </section>
+        <a id="company-link" href="https://dedica.no/">
+          <img
+            alt="Dedica logo"
+            src="assets/Dedica_Logo_White_CMYK_Cropped.png"
+            id="logo"
+          />
+        </a>
+      </div>
 
       <section id="intro">
         <p>
